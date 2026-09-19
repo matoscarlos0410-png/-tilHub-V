@@ -1,0 +1,1033 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#070b16">
+  <title>ÚtilHub V — Todo lo útil en un solo lugar</title>
+  <meta name="description" content="ÚtilHub V: herramientas, comida, compras, lugares cercanos y utilidades para el día a día.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ANIMACIÓN DE V7 -->
+  <div class="background-effects" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <header class="header">
+
+    <a class="brand" href="#inicio">
+      <span class="brand-logo">U</span>
+
+      <span>
+        <strong>Útil<span>Hub</span> V</strong>
+        <small>Todo lo útil, en un solo lugar</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#herramientas">Herramientas</a>
+      <a href="#comida">Comida</a>
+      <a href="#compras">Compras</a>
+      <a href="#cerca">Cerca de mí</a>
+      <a href="#personal">Mi espacio</a>
+      <a href="#ajustes">Ajustes</a>
+    </nav>
+
+    <button class="menu-button" id="menuBtn">☰</button>
+
+  </header>
+
+
+  <main id="inicio">
+
+    <section class="hero">
+
+      <div>
+
+        <span class="badge">
+          VERSIÓN V · MÁS RÁPIDA · MÁS ÚTIL
+        </span>
+
+        <h1>
+          Todo lo útil.
+          <span>En un solo lugar.</span>
+        </h1>
+
+        <p>
+          Calcula, convierte, organiza, busca lugares,
+          encuentra comida y compara opciones de compra.
+          ÚtilHub te ayuda a encontrar lo que necesitas.
+        </p>
+
+        <div class="hero-search">
+
+          <span>⌕</span>
+
+          <input
+            id="globalSearch"
+            placeholder="Busca una herramienta, comida, tienda..."
+            autocomplete="off"
+          >
+
+          <button id="searchBtn">
+            Buscar
+          </button>
+
+        </div>
+
+        <div class="quick-buttons">
+
+          <a href="#herramientas">🧰 Herramientas</a>
+          <a href="#comida">🍔 Comida</a>
+          <a href="#compras">🛒 Compras</a>
+          <a href="#cerca">📍 Cerca de mí</a>
+
+        </div>
+
+        <div class="connection">
+          <span id="connectionDot"></span>
+          <span id="connectionText">
+            Comprobando conexión...
+          </span>
+        </div>
+
+      </div>
+
+
+      <div class="hero-visual">
+
+        <div class="orbit"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="hub-symbol">
+          <span class="symbol-u">U</span>
+          <span class="symbol-dot"></span>
+        </div>
+
+        <div class="floating-card card-one">
+          🧮
+          <span>Calcula rápido</span>
+        </div>
+
+        <div class="floating-card card-two">
+          📍
+          <span>Encuentra cerca</span>
+        </div>
+
+        <div class="floating-card card-three">
+          🛒
+          <span>Compara opciones</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- HERRAMIENTAS -->
+
+    <section class="section" id="herramientas">
+
+      <div class="section-heading">
+
+        <div>
+          <span class="section-label">
+            CAJA DE HERRAMIENTAS
+          </span>
+
+          <h2>
+            Herramientas para el día a día
+          </h2>
+
+          <p>
+            Busca o filtra la herramienta que necesitas.
+          </p>
+        </div>
+
+        <select id="categoryFilter">
+
+          <option value="all">Todas</option>
+          <option value="calculo">Cálculo</option>
+          <option value="conversion">Conversión</option>
+          <option value="tiempo">Tiempo</option>
+          <option value="organizacion">Organización</option>
+          <option value="texto">Texto</option>
+          <option value="aleatorio">Aleatorio</option>
+          <option value="estudio">Estudio</option>
+
+        </select>
+
+      </div>
+
+
+      <div class="tools-grid" id="toolsGrid">
+
+
+        <article
+          class="tool-card"
+          data-name="calculadora calculo matematicas"
+          data-category="calculo"
+          data-tool="calc"
+        >
+
+          <div class="tool-icon">🧮</div>
+
+          <h3>Calculadora</h3>
+
+          <p>
+            Operaciones matemáticas básicas.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="porcentaje calculo"
+          data-category="calculo"
+          data-tool="percent"
+        >
+
+          <div class="tool-icon">%</div>
+
+          <h3>Porcentaje</h3>
+
+          <p>
+            Calcula porcentajes rápidamente.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="descuento calculo"
+          data-category="calculo"
+          data-tool="discount"
+        >
+
+          <div class="tool-icon">🏷️</div>
+
+          <h3>Descuento</h3>
+
+          <p>
+            Calcula precio final y ahorro.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="regla de tres calculo"
+          data-category="calculo"
+          data-tool="rule3"
+        >
+
+          <div class="tool-icon">📐</div>
+
+          <h3>Regla de 3</h3>
+
+          <p>
+            Resuelve proporciones.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="conversion unidades"
+          data-category="conversion"
+          data-tool="convert"
+        >
+
+          <div class="tool-icon">🔄</div>
+
+          <h3>Conversor</h3>
+
+          <p>
+            Longitud, peso, volumen y datos.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="temperatura celsius fahrenheit"
+          data-category="conversion"
+          data-tool="temp"
+        >
+
+          <div class="tool-icon">🌡️</div>
+
+          <h3>Temperatura</h3>
+
+          <p>
+            Convierte °C, °F y K.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="edad fecha"
+          data-category="tiempo"
+          data-tool="age"
+        >
+
+          <div class="tool-icon">🎂</div>
+
+          <h3>Edad</h3>
+
+          <p>
+            Calcula edad a partir de una fecha.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="diferencia fechas"
+          data-category="tiempo"
+          data-tool="datediff"
+        >
+
+          <div class="tool-icon">📅</div>
+
+          <h3>Entre fechas</h3>
+
+          <p>
+            Cuenta días entre dos fechas.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="propina cuenta"
+          data-category="calculo"
+          data-tool="tip"
+        >
+
+          <div class="tool-icon">💵</div>
+
+          <h3>Propina y cuenta</h3>
+
+          <p>
+            Calcula propina y reparto.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="monedas divisas"
+          data-category="conversion"
+          data-tool="currency"
+        >
+
+          <div class="tool-icon">💱</div>
+
+          <h3>Monedas</h3>
+
+          <p>
+            Consulta tasas de cambio.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="presupuesto dinero"
+          data-category="organizacion"
+          data-tool="budget"
+        >
+
+          <div class="tool-icon">💰</div>
+
+          <h3>Presupuesto</h3>
+
+          <p>
+            Organiza ingresos y gastos.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="temporizador timer"
+          data-category="tiempo"
+          data-tool="timer"
+        >
+
+          <div class="tool-icon">⏱️</div>
+
+          <h3>Temporizador</h3>
+
+          <p>
+            Cuenta atrás con tiempo real.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="cronometro stopwatch"
+          data-category="tiempo"
+          data-tool="stopwatch"
+        >
+
+          <div class="tool-icon">⏲️</div>
+
+          <h3>Cronómetro</h3>
+
+          <p>
+            Mide el tiempo correctamente.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="notas"
+          data-category="organizacion"
+          data-tool="notes"
+        >
+
+          <div class="tool-icon">📝</div>
+
+          <h3>Notas</h3>
+
+          <p>
+            Guarda notas localmente.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="tareas pendientes"
+          data-category="organizacion"
+          data-tool="tasks"
+        >
+
+          <div class="tool-icon">✅</div>
+
+          <h3>Tareas</h3>
+
+          <p>
+            Organiza tus pendientes.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="lista compras"
+          data-category="organizacion"
+          data-tool="shoppinglist"
+        >
+
+          <div class="tool-icon">🛒</div>
+
+          <h3>Lista de compras</h3>
+
+          <p>
+            Organiza lo que necesitas.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="contraseña password"
+          data-category="organizacion"
+          data-tool="password"
+        >
+
+          <div class="tool-icon">🔐</div>
+
+          <h3>Contraseña</h3>
+
+          <p>
+            Genera contraseñas aleatorias.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="qr codigo"
+          data-category="organizacion"
+          data-tool="qr"
+        >
+
+          <div class="tool-icon">▦</div>
+
+          <h3>Código QR</h3>
+
+          <p>
+            Genera códigos QR.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="numero aleatorio"
+          data-category="aleatorio"
+          data-tool="random"
+        >
+
+          <div class="tool-icon">🎲</div>
+
+          <h3>Número aleatorio</h3>
+
+          <p>
+            Elige números dentro de un rango.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="dado dados"
+          data-category="aleatorio"
+          data-tool="dice"
+        >
+
+          <div class="tool-icon">🎲</div>
+
+          <h3>Dado</h3>
+
+          <p>
+            Lanza uno o varios dados.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="diccionario palabras"
+          data-category="texto"
+          data-tool="dictionary"
+        >
+
+          <div class="tool-icon">📖</div>
+
+          <h3>Diccionario</h3>
+
+          <p>
+            Busca definiciones.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="contador texto palabras caracteres"
+          data-category="texto"
+          data-tool="textcount"
+        >
+
+          <div class="tool-icon">🔢</div>
+
+          <h3>Contador de texto</h3>
+
+          <p>
+            Cuenta caracteres y palabras.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="mayusculas minusculas"
+          data-category="texto"
+          data-tool="case"
+        >
+
+          <div class="tool-icon">Aa</div>
+
+          <h3>Mayúsculas / minúsculas</h3>
+
+          <p>
+            Cambia el formato del texto.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+
+        <article
+          class="tool-card"
+          data-name="organizador estudio"
+          data-category="estudio"
+          data-tool="study"
+        >
+
+          <div class="tool-icon">📚</div>
+
+          <h3>Organizador de estudio</h3>
+
+          <p>
+            Organiza tus sesiones de estudio.
+          </p>
+
+          <button>Abrir</button>
+
+        </article>
+
+      </div>
+
+      <div class="no-results" id="noResults">
+        No encontramos una herramienta.
+      </div>
+
+    </section>
+
+
+    <!-- COMIDA -->
+
+    <section class="special-section" id="comida">
+
+      <div class="special-content">
+
+        <span class="section-label">
+          COMIDA
+        </span>
+
+        <h2>
+          Encuentra dónde comer 🍔
+        </h2>
+
+        <p>
+          Busca restaurantes y categorías.
+          Tú decides dónde pedir y realizas el pedido.
+        </p>
+
+        <div class="search-box">
+
+          <input
+            id="foodInput"
+            placeholder="Ej.: cevichería, pizza, hamburguesas..."
+          >
+
+          <button id="foodSearch">
+            Buscar restaurantes
+          </button>
+
+        </div>
+
+        <div class="chips">
+
+          <button data-food="restaurantes">
+            🍽️ Restaurantes
+          </button>
+
+          <button data-food="cevicheria">
+            🐟 Cevicherías
+          </button>
+
+          <button data-food="polleria">
+            🍗 Pollerías
+          </button>
+
+          <button data-food="pizza">
+            🍕 Pizza
+          </button>
+
+          <button data-food="cafeteria">
+            ☕ Cafeterías
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="special-icon">
+        🍔
+      </div>
+
+    </section>
+
+
+    <!-- COMPRAS -->
+
+    <section class="special-section shopping-section" id="compras">
+
+      <div class="special-icon">
+        🛍️
+      </div>
+
+      <div class="special-content">
+
+        <span class="section-label">
+          COMPRAS
+        </span>
+
+        <h2>
+          Busca antes de comprar 🛒
+        </h2>
+
+        <p>
+          Busca tiendas o productos y compara resultados.
+          Tú eliges y realizas la compra.
+        </p>
+
+        <div class="search-box">
+
+          <input
+            id="shopInput"
+            placeholder="Ej.: zapatillas, laptop, útiles escolares..."
+          >
+
+          <button id="shopSearch">
+            Buscar productos
+          </button>
+
+        </div>
+
+        <div class="chips">
+
+          <button data-shop="tiendas">
+            🏪 Tiendas
+          </button>
+
+          <button data-shop="supermercados">
+            🛒 Supermercados
+          </button>
+
+          <button data-shop="ropa">
+            👕 Ropa
+          </button>
+
+          <button data-shop="tecnologia">
+            💻 Tecnología
+          </button>
+
+          <button data-shop="libreria">
+            📚 Librerías
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CERCA DE MI -->
+
+    <section class="nearby-section" id="cerca">
+
+      <div class="center-heading">
+
+        <span class="section-label">
+          CERCA DE MÍ
+        </span>
+
+        <h2>
+          Encuentra lugares cercanos 📍
+        </h2>
+
+        <p>
+          Permite tu ubicación o escribe una zona manualmente.
+        </p>
+
+      </div>
+
+
+      <div class="nearby-grid">
+
+        <button class="nearby-card" data-near="restaurantes">
+          <span>🍔</span>
+          <small>Restaurantes</small>
+        </button>
+
+        <button class="nearby-card" data-near="tiendas">
+          <span>🏪</span>
+          <small>Tiendas</small>
+        </button>
+
+        <button class="nearby-card" data-near="farmacias">
+          <span>💊</span>
+          <small>Farmacias</small>
+        </button>
+
+        <button class="nearby-card" data-near="supermercados">
+          <span>🛒</span>
+          <small>Supermercados</small>
+        </button>
+
+        <button class="nearby-card" data-near="servicios">
+          <span>🛠️</span>
+          <small>Servicios</small>
+        </button>
+
+        <button class="nearby-card" data-near="lugares importantes">
+          <span>📌</span>
+          <small>Lugares</small>
+        </button>
+
+      </div>
+
+
+      <div class="nearby-actions">
+
+        <input
+          id="manualLocation"
+          placeholder="Zona o ciudad, por ejemplo: Sausal"
+        >
+
+        <button class="location-button" id="locationBtn">
+          📍 Usar mi ubicación
+        </button>
+
+      </div>
+
+      <p class="location-status" id="locationStatus">
+        No se ha solicitado tu ubicación.
+      </p>
+
+    </section>
+
+
+    <!-- MI ESPACIO -->
+
+    <section class="section" id="personal">
+
+      <div class="section-heading">
+
+        <div>
+
+          <span class="section-label">
+            MI ESPACIO
+          </span>
+
+          <h2>
+            Favoritos e historial
+          </h2>
+
+          <p>
+            Se guardan en este dispositivo.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="personal-grid">
+
+        <div class="personal-box">
+
+          <h2>
+            ⭐ Favoritos
+          </h2>
+
+          <div
+            class="saved-list"
+            id="favoritesList"
+          ></div>
+
+        </div>
+
+
+        <div class="personal-box">
+
+          <h2>
+            🕘 Búsquedas recientes
+          </h2>
+
+          <div
+            class="saved-list"
+            id="historyList"
+          ></div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- AJUSTES -->
+
+    <section class="section" id="ajustes">
+
+      <div class="section-heading">
+
+        <div>
+
+          <span class="section-label">
+            CONFIGURACIÓN
+          </span>
+
+          <h2>
+            Ajustes de ÚtilHub V
+          </h2>
+
+          <p>
+            Controla la experiencia y tus datos.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="settings-grid">
+
+        <button id="themeBtn">
+          🌗 Cambiar tema
+        </button>
+
+        <button id="animationBtn">
+          ✨ Reducir animaciones
+        </button>
+
+        <button id="exportBtn">
+          ⬇️ Exportar datos
+        </button>
+
+        <button id="importBtn">
+          ⬆️ Importar datos
+        </button>
+
+        <button
+          id="clearBtn"
+          class="danger"
+        >
+          🗑️ Borrar datos locales
+        </button>
+
+        <input
+          type="file"
+          id="importFile"
+          accept="application/json"
+          hidden
+        >
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+
+    <div class="footer-brand">
+      Útil<span>Hub</span> V
+    </div>
+
+    <p>
+      Herramientas prácticas, búsqueda y organización
+      en un solo lugar.
+    </p>
+
+    <p class="copyright">
+      ÚtilHub V · Proyecto web
+    </p>
+
+  </footer>
+
+
+  <div class="modal" id="modal">
+
+    <div class="modal-content">
+
+      <button
+        class="modal-close"
+        id="modalClose"
+      >
+        ×
+      </button>
+
+      <h2
+        class="modal-title"
+        id="modalTitle"
+      ></h2>
+
+      <div id="modalBody"></div>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
